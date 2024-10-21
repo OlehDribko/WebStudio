@@ -1,19 +1,178 @@
+/* *****  base style ******/
+:root {
+    --decoration-activity-colore: #5D5AE5;
+    --spacing-default: 24px;
+    --white: #FFF;
+        
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    
+}
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.container {
+   width: 1156px; 
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+
+/* reset start */
+.link{
+    color: currentColor;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    outline: none;
+font-family: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+}
 ul,ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-h1,h2,h3,h4,h5 {
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
-
-}
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-}
-section{
-    width: 1440px;
     
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* reset end */
+/* work fore elements */
+
+
+
+/* ---------  HEADER */
+
+.titleHeader{
+
+
+}
+.headerContainer{
+    height: 72px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.logoLink{
+    margin-right: 76px;
+}
+.logoDecoration{
+color: var(--decoration-activity-colore);
+}
+
+
+.pageNav{
+    display: flex;
+    gap: 40px;
+}
+.headerContacts{
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+
+/*--------------> HERO <--------------------*/
+
+
+.heroSectione{
+    display: flex;
+
+    height: 600px;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+ rgba(46, 47, 66, 0.7)), url(../Photos/Hero.jpg);
+
+}
+.heroTitle{
+    display: block;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 700;
+    width: 496px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+
+}
+.mainBtn{
+    color: #FFF;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background:#4D5AE5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+     
+}
+
+/* < !-- Sectione Benefits --> */
+
+.option-list{
+    display: flex;
+    gap:var(--spacing-default);
+}
+
+/* < !--section what-we-doing --> */
+
+
+.what-we-doing--list-img{
+    display: flex;
+    gap: var(--spacing-default);
+}
+
+        /* < !-- ----------SectionTeam --> */
+
+
+.team-list-info{
+    display: flex;
+    gap: var(--spacing-default);
+}
+
+ /* < !-- SECTION Customers --> */
+
+ .customers-list{
+    display: flex;
+    gap:var(--spacing-default)
+ }
+ .custmers-box-list-elements{
+    box-sizing: border-box;
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+ }
