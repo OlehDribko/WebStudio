@@ -14,8 +14,8 @@ body {
     
 }
 section{
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+    padding-bottom: 120px;
 }
 *,
 *::after,
@@ -67,6 +67,7 @@ img{
     max-width: 100%;
     height: auto;
 }
+
 /* reset end */
 /* work fore elements */
 
@@ -111,10 +112,15 @@ color: var(--decoration-activity-colore);
 .heroSectione{
     display: flex;
 
-    height: 600px;
+justify-content: center;
+text-align: center;
+background-position: center center;
+    
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
  rgba(46, 47, 66, 0.7)), url(../Photos/Hero.jpg);
-
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
 }
 .heroTitle{
     display: block;
@@ -127,6 +133,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     margin-bottom: 48px;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    margin-top: 188px;
+    margin-bottom: 48px;
 
 }
 .mainBtn{
@@ -137,6 +145,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    
      
 }
 
@@ -162,6 +171,28 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     display: flex;
     gap: var(--spacing-default);
 }
+.social-list{
+    display: flex;
+    gap: var(--spacing-default);
+    justify-content: center;
+    
+    
+}
+.iconsSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+
+}
+.iconsSocial:hover{
+    background-color: #4de587; 
+}
+
+
 
  /* < !-- SECTION Customers --> */
 
@@ -170,9 +201,17 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     gap:var(--spacing-default)
  }
  .custmers-box-list-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     width: 168px;
     height: 88px;
     border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    border: 1px solid #8E8F99;
+ }
+ .custmers-icon{
+    display: flex;
+   
+
  }
